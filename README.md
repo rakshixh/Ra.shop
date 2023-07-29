@@ -1,3 +1,15 @@
+# Functionalities
+1. Home Page
+2. Wishlist Page
+3. Login Page
+4. Cart Page along with Quantity and Total Amount calculation
+5. Checkout component with address updation functionality
+6. React toastify for toast messages
+
+### React Application makes use of Web Browser's localStorage
+
+### Product Images [xenpachi.in](https://www.xenpachi.in/)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
