@@ -8,7 +8,7 @@
 
 ### React Application makes use of Web Browser's localStorage
 
-### Product Images [xenpachi.in](https://www.xenpachi.in/)
+### Product Images <a href="https://www.xenpachi.in/" target="_blank">Xenpachi.in</a>
 
 # Getting Started with Create React App
 
