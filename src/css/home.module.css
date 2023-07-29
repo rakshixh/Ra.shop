@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
+
+/* Home Page Styling */
+/* ******************************* */
+.heading{
+    margin: 20px 0px 30px 0px;
+    color: #2D6A4F;
+    text-transform: uppercase;
+}
+
+
+
+/* Products Component Styling */
+/* ******************************** */
+
+.productContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 900px;
+    margin: 0 auto;
+}
+  
+.productCard{
+    width: 30%;
+    height: 100%;
+    background-color: #f9f9f9;
+    margin-bottom: 40px;
+    border-radius: 30px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.productCard:hover{
+    transform: scale(1.05);
+}
+
+.productImg{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    border-radius: 30px 30px 0px 0px;
+}
+
+.productTitlePriceDiv{
+    margin: 10px 0px 0px 0px;
+}
+
+.title{
+    color: #2D6A4F;
+    margin-left: 10px;
+}
+
+.price{
+    color: #718355;
+    margin-left: 10px;
+}
+
+.wishlistBtn{
+    background-color: indianred;
+    margin-left: 10px;
+    padding: 0px 10px 0px 10px;
+    border: 0px;
+    border-radius: 15px;
+    color: aliceblue;
+    font-size: 12px;
+    font-family: 'Kalam', cursive;
+    cursor: pointer;
+}
+.wishlistBtn:hover{
+    background-color: #31473a;
+}
+
+.GTPbutton{
+    width: 100%;
+    height: 40px;
+    background-color: #2D6A4F;
+    margin: 20px 0px 0px 0px;
+    border: 0px;
+    border-radius: 0px 0px 30px 30px;
+    color: aliceblue;
+    font-size: 18px;
+    font-family: 'Kalam', cursive;
+    cursor: pointer;
+}
+.GTPbutton:hover{
+    background-color: #31473a;
+}
+
+
+/* wishlist page styling */
+/* ************************ */
+
+.wishlistContainer{
+    margin-top: 50px;
+}
+
+.EmptyWishlistContainer{
+    height: 380px;
+}
+
+.imagecontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.emptywishlistimage{
+    width: 330px;
+}

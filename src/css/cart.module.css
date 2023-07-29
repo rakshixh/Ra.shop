@@ -1,0 +1,264 @@
+
+
+.EmptyCartContainer{
+    height: 380px;
+}
+
+.imagecontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.emptycart{
+    width: 330px;
+}
+
+.Container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 30px;
+}
+
+.card{
+    border: 2px solid #2D6A4F;
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.image{
+    flex: 1;
+    margin-right: 10px;
+}
+
+.image img{
+    max-width: 100%;
+    border-radius: 20px;
+}
+
+.details{
+    flex: 3;
+    padding: 20px;
+}
+
+.title{
+    color: #2D6A4F;
+    font-size: 32px;
+}
+
+.price{
+    color: #2D6A4F;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.instock{
+    margin-top: 10px;
+    color: seagreen;
+}
+
+.emi{
+    margin-top: 5px;
+    color: indianred;
+}
+
+.quantityControls{
+    margin: 20px 0px 10px 0px;
+}
+
+.quantityBack{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #2D6A4F;
+}
+
+.quantityBtn{
+    width: 50px;
+    height: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #2D6A4F;
+    border: 0px;
+    background-color: transparent;
+    font-family: 'Menlo', 'Lucida Console', 'Monaco', 'Consolas', monospace;
+    cursor: pointer;
+}
+
+.quantity{
+    margin: 0px 10px 0px 10px;
+    font-size: 20px;
+    color: #2D6A4F;
+    font-weight: bold;
+}
+
+.removeButton{
+    width: 20%;
+    height: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: transparent;
+    border: 2px solid #2D6A4F;
+    color: #2D6A4F;
+    cursor: pointer;
+}
+.removeButton:hover{
+    background-color: #2D6A4F;
+    color: aliceblue;
+}
+
+.line{
+    border: 2px solid #2D6A4F;
+    width: 100%;
+    margin: 30px 0px 20px 0px;
+}
+
+.amountContainer{
+    /* background-color: #2D6A4F; */
+    width: 74%;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.subamount{
+    color: #2D6A4F;
+}
+
+.shipping{
+    margin-top: 10px;
+    color: #2D6A4F;
+}
+
+.tax{
+    margin-top: 10px;
+    color: #2D6A4F;
+}
+
+.amountline{
+    border: 1px solid #2D6A4F;
+    width: 100%;
+    margin-top: 10px;
+    display: block;
+}
+
+.totalamount{
+    margin-top: 10px;
+    color: #2D6A4F;
+    /* color: aliceblue; */
+}
+
+.checkout{
+    width: 220px;
+    height: 40px;
+    margin-top: 20px;
+    border: 0px;
+    background-color: #2D6A4F;
+    color: aliceblue;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.checkout:hover{
+    background-color: transparent;
+    border: 2px solid #2D6A4F;
+    color: #2D6A4F;
+}
+
+
+/* Checkout Component CSS styles */
+/* ***************************** */
+
+.addressContainer{
+    /* background-color: blueviolet; */
+    margin-top: 10px;
+}
+
+.deliveryline{
+    border: 1px solid #2D6A4F;
+    display: block;
+}
+
+.deliveryaddresstitle{
+    margin-top: 20px;
+    color: indianred;
+}
+
+.deliveryaddress{
+    color: #2D6A4F;
+    margin-top: 5px;
+}
+
+.deliveryeditBtn{
+    width: 10%;
+    height: 25px;
+    padding: 5px;
+    border: 0px;
+    border-radius: 10px;
+    background-color: indianred;
+    font-size: 12px;
+    color: aliceblue;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.orderBtn{
+    width: 220px;
+    height: 40px;
+    margin-top: 20px;
+    border: 0px;
+    background-color: #2D6A4F;
+    color: aliceblue;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.orderBtn:hover{
+    background-color: transparent;
+    border: 2px solid #2D6A4F;
+    color: #2D6A4F;
+}
+
+.inputfield{
+    width: 500px;
+    height: 35px;
+    padding: 5px;
+    margin-top: 10px;
+    border: 2px solid #2D6A4F;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #2D6A4F;
+}
+.inputfield:focus{
+    outline-color: #2D6A4F;
+}
+
+.confirmBtn{
+    width: 10%;
+    height: 25px;
+    padding: 5px;
+    border: 0px;
+    border-radius: 10px;
+    background-color: indianred;
+    font-size: 12px;
+    color: aliceblue;
+    margin: 10px 10px 0px 0px;
+    cursor: pointer;
+}
+
+.cancelBtn{
+    width: 10%;
+    height: 25px;
+    padding: 5px;
+    border: 0px;
+    border-radius: 10px;
+    background-color: rgb(206, 121, 121);
+    font-size: 12px;
+    color: aliceblue;
+    margin-top: 10px;
+    cursor: pointer;
+}

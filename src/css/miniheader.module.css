@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+
+.smallBanner {
+    width: 100%;
+    height: 30px;
+    background-color: #B7E4C7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    font-family: 'Inconsolata', monospace;
+}
+
+.ptag {
+    white-space: nowrap;
+    animation: move-rtl 18s linear infinite;
+}
+
+@keyframes move-rtl {
+    0% {
+        transform: translateX(220%);
+      }
+    100% {
+        transform: translateX(-220%);
+      }
+}

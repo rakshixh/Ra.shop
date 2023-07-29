@@ -1,0 +1,48 @@
+
+
+.logotext {
+    font-family: 'Rokkitt', serif;
+    font-size: 3.5rem;
+    font-weight: 900;
+    color: #edf4f2;
+    margin-left: 50px;
+    text-decoration: none;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #31473a;
+}
+
+.ulist {
+    list-style: none;
+    margin: 20px 50px 20px 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.list {
+    line-height: 2.2;
+    margin-left: 35px;
+}
+
+.atag {
+    text-decoration: none;
+    color: #fef9f8;
+
+    display: flex;
+    align-items: center;
+}
+
+.atag:hover {
+    color: #FAE588;
+}
+
+.register_icon {
+    margin-left: 5px;
+}

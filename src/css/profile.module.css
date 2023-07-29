@@ -1,0 +1,49 @@
+.userProfileBack{
+    width: 100%;
+    height: 250px;
+}
+
+.userProfileImg{
+    width: 150px;
+    border-radius: 50%;
+    position: absolute;
+    left: 50px;
+    top: 290px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    border: 5px solid white;
+}
+
+.userDataDiv{
+    position: relative;
+    left: 200px;
+    margin: 20px 0px 20px 20px;
+    /* background-color: blueviolet; */
+    width: 650px;
+    height: 100px;
+}
+
+.name{
+    margin-bottom: 8px;
+    color: #1B4332;
+}
+
+.bio{
+    color: #2F7557;
+}
+
+.logoutBtn{
+    position: relative;
+    left: 200px;
+    margin: 0px 0px 20px 20px;
+    width: 150px;
+    height: 35px;
+    background-color: #1B4332;
+    color: aliceblue;
+    border: 0px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.logoutBtn:hover{
+    background-color: #2F7557;
+}

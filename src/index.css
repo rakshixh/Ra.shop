@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* *********************************************** */
+/* Scroll Bar */
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #8ea3ca;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #31473a;
+  border-radius: 5px;
+}
+/* *********************************************** */

@@ -1,0 +1,27 @@
+.footer {
+    height: 150px;
+    background-color: black;
+}
+
+.logo {
+    /* color: pink; */
+    text-align: center;
+    padding-top: 45px;
+    /* text-decoration: none; */
+}
+
+.aTagLogo {
+    text-decoration: none;
+    color: #edf4f2;
+}
+
+.copycontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.copyright {
+    color: gray;
+    padding: 10px;
+}
