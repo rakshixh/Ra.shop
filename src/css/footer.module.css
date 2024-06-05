@@ -1,13 +1,18 @@
 .footer {
     height: 150px;
     background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
 }
 
 .logo {
-    /* color: pink; */
     text-align: center;
-    padding-top: 45px;
-    /* text-decoration: none; */
+    padding-top: 20px;
+    font-size: 2rem;
+    margin: 0;
 }
 
 .aTagLogo {
@@ -19,9 +24,53 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 10px;
 }
 
 .copyright {
     color: gray;
     padding: 10px;
+    text-align: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .footer {
+        height: auto;
+        padding: 20px 10px;
+    }
+
+    .logo {
+        font-size: 1.8rem;
+        padding-top: 10px;
+    }
+
+    .copycontainer {
+        flex-direction: column;
+    }
+
+    .copyright {
+        padding: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        height: auto;
+        padding: 15px 5px;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+        padding-top: 5px;
+    }
+
+    .copycontainer {
+        flex-direction: column;
+    }
+
+    .copyright {
+        padding: 5px;
+        font-size: 0.9rem;
+    }
 }
