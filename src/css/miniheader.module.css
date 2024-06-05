@@ -19,8 +19,38 @@
 @keyframes move-rtl {
     0% {
         transform: translateX(220%);
-      }
+    }
+
     100% {
         transform: translateX(-220%);
-      }
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .smallBanner {
+        height: 25px;
+        /* Slightly smaller height on smaller screens */
+    }
+
+    .ptag {
+        font-size: 0.9em;
+        /* Slightly smaller font size on smaller screens */
+        animation: move-rtl 15s linear infinite;
+        /* Adjust animation speed */
+    }
+}
+
+@media (max-width: 480px) {
+    .smallBanner {
+        height: 20px;
+        /* Even smaller height on very small screens */
+    }
+
+    .ptag {
+        font-size: 0.8em;
+        /* Smaller font size on very small screens */
+        animation: move-rtl 12s linear infinite;
+        /* Further adjust animation speed */
+    }
 }
