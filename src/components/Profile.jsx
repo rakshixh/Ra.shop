@@ -3,7 +3,7 @@ import { toast } from "react-toastify";
 import ProfileCSS from "../css/profile.module.css";
 import userProfileBack from "../assets/userBackground.jpg";
 import guestProfileBack from "../assets/guestBackground.jpg";
-import userProfileImg from "../assets/Rakshith Acharya.jpg";
+import userProfileImg from "../assets/User.png";
 import guestProfileImg from "../assets/Guest.jpg";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 
@@ -30,9 +30,7 @@ const Profile = ({ userType, handleLogout }) => {
         />
         <div className={ProfileCSS.userDataDiv}>
           <h2 className={ProfileCSS.name}>
-            {userType === "user"
-              ? "Rakshith Acharya"
-              : "Guest User ra3hh62shr3f"}
+            {userType === "user" ? "Alex Cartman" : "Guest User ra3hh62shr3f"}
           </h2>
           <p className={ProfileCSS.bio}>
             {userType === "user"
