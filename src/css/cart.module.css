@@ -1,27 +1,37 @@
-
-
-.EmptyCartContainer{
-    height: 380px;
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-.imagecontainer{
+.EmptyCartContainer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.imagecontainer {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.emptycart{
+.emptycart {
     width: 330px;
 }
 
-.Container{
+.Container {
+    flex-grow: 1;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin: 30px;
 }
 
-.card{
+.card {
     border: 2px solid #2D6A4F;
     display: flex;
     padding: 10px;
@@ -30,47 +40,47 @@
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-.image{
+.image {
     flex: 1;
     margin-right: 10px;
 }
 
-.image img{
+.image img {
     max-width: 100%;
     border-radius: 20px;
 }
 
-.details{
+.details {
     flex: 3;
     padding: 20px;
 }
 
-.title{
+.title {
     color: #2D6A4F;
     font-size: 32px;
 }
 
-.price{
+.price {
     color: #2D6A4F;
     margin-top: 10px;
     font-size: 18px;
 }
 
-.instock{
+.instock {
     margin-top: 10px;
     color: seagreen;
 }
 
-.emi{
+.emi {
     margin-top: 5px;
     color: indianred;
 }
 
-.quantityControls{
+.quantityControls {
     margin: 20px 0px 10px 0px;
 }
 
-.quantityBack{
+.quantityBack {
     width: 20%;
     display: flex;
     justify-content: center;
@@ -78,7 +88,7 @@
     border: 2px solid #2D6A4F;
 }
 
-.quantityBtn{
+.quantityBtn {
     width: 50px;
     height: 30px;
     font-size: 20px;
@@ -90,14 +100,14 @@
     cursor: pointer;
 }
 
-.quantity{
+.quantity {
     margin: 0px 10px 0px 10px;
     font-size: 20px;
     color: #2D6A4F;
     font-weight: bold;
 }
 
-.removeButton{
+.removeButton {
     width: 20%;
     height: 30px;
     font-size: 16px;
@@ -107,52 +117,51 @@
     color: #2D6A4F;
     cursor: pointer;
 }
-.removeButton:hover{
+
+.removeButton:hover {
     background-color: #2D6A4F;
     color: aliceblue;
 }
 
-.line{
+.line {
     border: 2px solid #2D6A4F;
     width: 100%;
     margin: 30px 0px 20px 0px;
 }
 
-.amountContainer{
-    /* background-color: #2D6A4F; */
+.amountContainer {
     width: 74%;
     border-radius: 10px;
     padding: 20px;
 }
 
-.subamount{
+.subamount {
     color: #2D6A4F;
 }
 
-.shipping{
+.shipping {
     margin-top: 10px;
     color: #2D6A4F;
 }
 
-.tax{
+.tax {
     margin-top: 10px;
     color: #2D6A4F;
 }
 
-.amountline{
+.amountline {
     border: 1px solid #2D6A4F;
     width: 100%;
     margin-top: 10px;
     display: block;
 }
 
-.totalamount{
+.totalamount {
     margin-top: 10px;
     color: #2D6A4F;
-    /* color: aliceblue; */
 }
 
-.checkout{
+.checkout {
     width: 220px;
     height: 40px;
     margin-top: 20px;
@@ -163,37 +172,36 @@
     font-weight: bold;
     cursor: pointer;
 }
-.checkout:hover{
+
+.checkout:hover {
     background-color: transparent;
     border: 2px solid #2D6A4F;
     color: #2D6A4F;
 }
 
-
 /* Checkout Component CSS styles */
 /* ***************************** */
 
-.addressContainer{
-    /* background-color: blueviolet; */
+.addressContainer {
     margin-top: 10px;
 }
 
-.deliveryline{
+.deliveryline {
     border: 1px solid #2D6A4F;
     display: block;
 }
 
-.deliveryaddresstitle{
+.deliveryaddresstitle {
     margin-top: 20px;
     color: indianred;
 }
 
-.deliveryaddress{
+.deliveryaddress {
     color: #2D6A4F;
     margin-top: 5px;
 }
 
-.deliveryeditBtn{
+.deliveryeditBtn {
     width: 10%;
     height: 25px;
     padding: 5px;
@@ -206,7 +214,7 @@
     cursor: pointer;
 }
 
-.orderBtn{
+.orderBtn {
     width: 220px;
     height: 40px;
     margin-top: 20px;
@@ -217,13 +225,14 @@
     font-weight: bold;
     cursor: pointer;
 }
-.orderBtn:hover{
+
+.orderBtn:hover {
     background-color: transparent;
     border: 2px solid #2D6A4F;
     color: #2D6A4F;
 }
 
-.inputfield{
+.inputfield {
     width: 500px;
     height: 35px;
     padding: 5px;
@@ -233,11 +242,12 @@
     font-size: 14px;
     color: #2D6A4F;
 }
-.inputfield:focus{
+
+.inputfield:focus {
     outline-color: #2D6A4F;
 }
 
-.confirmBtn{
+.confirmBtn {
     width: 10%;
     height: 25px;
     padding: 5px;
@@ -250,7 +260,7 @@
     cursor: pointer;
 }
 
-.cancelBtn{
+.cancelBtn {
     width: 10%;
     height: 25px;
     padding: 5px;
@@ -261,4 +271,162 @@
     color: aliceblue;
     margin-top: 10px;
     cursor: pointer;
+}
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 768px) {
+    .Container {
+        margin: 10px;
+    }
+
+    .card {
+        align-items: center;
+        width: 100%;
+    }
+
+    .details {
+        padding: 8px;
+        flex: 3;
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .price {
+        font-size: 1.2rem;
+        margin: 4px 0px 0px 0px;
+    }
+
+    .instock {
+        font-size: 1.2rem;
+        margin: 4px 0px 0px 0px;
+    }
+
+    .emi {
+        font-size: 1rem;
+        margin: 4px 0px 0px 0px;
+    }
+
+    .quantityControls {
+        margin: 8px 0px 0px 0px;
+    }
+
+    .quantityBack {
+        width: 90px;
+        height: 25px;
+    }
+
+    .removeButton {
+        width: 90px;
+        height: 25px;
+        font-size: 16px;
+        margin: 8px 0px 0px 0px;
+    }
+
+    .quantityBtn {
+        width: 30px;
+        height: 20px;
+        font-size: 16px;
+    }
+
+    .quantity {
+        font-size: 16px;
+    }
+
+    .amountContainer {
+        padding: 0px;
+    }
+
+    .totalamount {
+        font-size: 1.5rem;
+    }
+
+    .checkout,
+    .orderBtn {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .inputfield {
+        width: 100%;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .Container {
+        margin: 10px;
+    }
+
+    .card {
+        align-items: center;
+    }
+
+    .details {
+        padding: 8px;
+        flex: 1;
+    }
+
+    .title {
+        font-size: 1.2rem;
+    }
+
+    .price {
+        font-size: 1rem;
+        margin: 4px 0px 0px 0px;
+    }
+
+    .instock {
+        font-size: 1rem;
+        margin: 4px 0px 0px 0px;
+    }
+
+    .emi {
+        font-size: 0.7rem;
+        margin: 4px 0px 0px 0px;
+    }
+
+    .quantityControls {
+        margin: 8px 0px 0px 0px;
+    }
+
+    .quantityBack {
+        width: 90px;
+        height: 25px;
+    }
+
+    .removeButton {
+        width: 90px;
+        height: 25px;
+        font-size: 16px;
+        margin: 8px 0px 0px 0px;
+    }
+
+    .quantityBtn {
+        width: 30px;
+        height: 20px;
+        font-size: 16px;
+    }
+
+    .quantity {
+        font-size: 16px;
+    }
+
+    .amountContainer {
+        padding: 0px;
+    }
+
+    .totalamount {
+        font-size: 1.5rem;
+    }
+
+    .checkout,
+    .orderBtn {
+        font-size: 14px;
+    }
+
+    .inputfield {
+        font-size: 10px;
+    }
 }
