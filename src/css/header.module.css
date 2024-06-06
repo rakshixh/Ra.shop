@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Rokkitt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rokkitt:ital,wght@0,100..900;1,100..900&display=swap');
 
 .logotext {
     font-family: 'Rokkitt', serif;
     font-size: 3.5rem;
-    font-weight: 900;
+    font-weight: 600;
     color: #edf4f2;
     margin-left: 50px;
     text-decoration: none;
