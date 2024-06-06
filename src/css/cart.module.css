@@ -342,15 +342,31 @@
         font-size: 1.5rem;
     }
 
-    .checkout,
-    .orderBtn {
-        width: 100%;
-        font-size: 16px;
+    .deliveryaddresstitle {
+        font-size: 1.3rem;
+    }
+
+    .deliveryaddress {
+        font-size: 0.9rem;
+    }
+
+    .deliveryeditBtn {
+        width: 100px;
     }
 
     .inputfield {
-        width: 100%;
-        font-size: 12px;
+        font-size: 0.8rem;
+    }
+
+    .confirmBtn,
+    .cancelBtn {
+        width: 100px;
+        font-size: 0.8rem;
+    }
+
+    .checkout,
+    .orderBtn {
+        font-size: 1rem;
     }
 }
 
@@ -421,12 +437,30 @@
         font-size: 1.5rem;
     }
 
-    .checkout,
-    .orderBtn {
-        font-size: 14px;
+    .deliveryaddresstitle {
+        font-size: 1.3rem;
+    }
+
+    .deliveryaddress {
+        font-size: 0.9rem;
+    }
+
+    .deliveryeditBtn {
+        width: 100px;
     }
 
     .inputfield {
-        font-size: 10px;
+        font-size: 0.8rem;
+    }
+
+    .confirmBtn,
+    .cancelBtn {
+        width: 100px;
+        font-size: 0.8rem;
+    }
+
+    .checkout,
+    .orderBtn {
+        font-size: 1rem;
     }
 }
