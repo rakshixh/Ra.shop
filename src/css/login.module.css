@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
+
+.page {
+    display: flex;
+    flex-direction: column;
+    min-height: 99.6vh;
+}
+
+.content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.card {
+    background-color: #74C69D;
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    text-align: center;
+}
+
+.btn {
+    width: 100%;
+    max-width: 360px;
+    height: 45px;
+    margin: 10px 0;
+    font-size: 18px;
+    border: 0;
+    border-radius: 8px;
+    background-color: #1B4332;
+    color: aliceblue;
+    cursor: pointer;
+    font-family: 'Kalam', serif;
+}
+
+.btn:hover {
+    background-color: #1E2F23;
+}
+
+.terms {
+    font-size: 12px;
+    margin-top: 10px;
+    color: #1B4332;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        padding: 0;
+    }
+
+    .card {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    .btn {
+        width: 80%;
+        margin: 20px auto;
+    }
+
+    .loginTitle {
+        font-size: 1.5rem;
+    }
+
+    .terms {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0;
+    }
+
+    .card {
+        width: 100%;
+        height: auto;
+        padding: 15px;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    .btn {
+        width: 80%;
+        margin: 20px auto;
+        font-size: 16px;
+    }
+
+    .loginTitle {
+        font-size: 1.3rem;
+    }
+
+    .terms {
+        font-size: 10px;
+    }
+}
