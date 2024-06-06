@@ -11,6 +11,7 @@
 /* width */
 ::-webkit-scrollbar {
   width: 5px;
+  height: 5px;
 }
 
 /* Track */
@@ -23,4 +24,5 @@
   background: #31473a;
   border-radius: 5px;
 }
+
 /* *********************************************** */
