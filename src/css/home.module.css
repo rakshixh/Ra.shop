@@ -19,6 +19,11 @@
     flex-direction: column;
 }
 
+.heading {
+    color: #2D6A4F;
+    margin: 20px 0px;
+}
+
 .wishlistContainer {
     flex: 1;
     overflow-y: auto;
