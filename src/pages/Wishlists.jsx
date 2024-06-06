@@ -35,57 +35,67 @@ function Wishlists() {
   );
 
   return (
-    <>
+    <div className={HomeCSS.page}>
       <MiniHeader />
       <Header />
-      {wishlistProducts.length === 0 ? (
-        <div className={HomeCSS.EmptyWishlistContainer}>
-          <div className={HomeCSS.imagecontainer}>
-            <img
-              src={WishlistEmpty}
-              className={HomeCSS.emptywishlistimage}
-              alt="Empty Cart"
-            />
+      <div
+        className={
+          wishlistProducts.length === 0
+            ? HomeCSS.emptyContent
+            : HomeCSS.filledContent
+        }
+      >
+        {wishlistProducts.length === 0 ? (
+          <div className={HomeCSS.emptyWishlistContainer}>
+            <div className={HomeCSS.imageContainer}>
+              <img
+                src={WishlistEmpty}
+                className={HomeCSS.emptyWishlistImage}
+                alt="Empty Cart"
+              />
+            </div>
+            <h1 className={HomeCSS.EmptyHeading}>
+              Create your wishlist and save your favorite products!
+            </h1>
           </div>
-          <h1 align="center" style={{ color: "#2D6A4F" }}>
-            Create your wishlist and save your favorite products!
-          </h1>
-        </div>
-      ) : (
-        <div className={HomeCSS.wishlistContainer}>
-          <div className={HomeCSS.productContainer}>
-            {wishlistProducts.map((product) => (
-              <div key={product.id} className={HomeCSS.productCard}>
-                <img
-                  src={product.img}
-                  className={HomeCSS.productImg}
-                  alt={product.title}
-                />
-                <div className={HomeCSS.productTitlePriceDiv}>
-                  <h2 className={HomeCSS.title}>{product.title}</h2>
-                  <p className={HomeCSS.price}>
-                    Price: ₹<b>{product.price}</b>
-                  </p>
-                  <button
-                    className={HomeCSS.wishlistBtn}
-                    onClick={() => handleWishlistToggle(product.id)}
+        ) : (
+          <div className={HomeCSS.wishlistContainer}>
+            <div className={HomeCSS.productContainer}>
+              {wishlistProducts.map((product) => (
+                <div key={product.id} className={HomeCSS.productCard}>
+                  <img
+                    src={product.img}
+                    className={HomeCSS.productImg}
+                    alt={product.title}
+                  />
+                  <div className={HomeCSS.productTitlePriceDiv}>
+                    <h2 className={HomeCSS.title}>{product.title}</h2>
+                    <p className={HomeCSS.price}>
+                      Price: ₹<b>{product.price}</b>
+                    </p>
+                    <button
+                      className={HomeCSS.wishlistBtn}
+                      onClick={() => handleWishlistToggle(product.id)}
+                    >
+                      {wishlist.includes(product.id)
+                        ? "Remove from Wishlist"
+                        : "Add to Wishlist"}
+                    </button>
+                  </div>
+                  <Link
+                    to={`/products/${product.id}`}
+                    className={HomeCSS.GTPbtn}
                   >
-                    {wishlist.includes(product.id)
-                      ? "Remove from Wishlist"
-                      : "Add to Wishlist"}
-                  </button>
+                    <button className={HomeCSS.GTPbutton}>Go To Product</button>
+                  </Link>
                 </div>
-                <Link to={`/products/${product.id}`} className={HomeCSS.GTPbtn}>
-                  <button className={HomeCSS.GTPbutton}>Go To Product</button>
-                </Link>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
-        </div>
-      )}
-
+        )}
+      </div>
       <Footer />
-    </>
+    </div>
   );
 }
 
