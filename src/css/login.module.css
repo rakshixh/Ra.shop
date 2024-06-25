@@ -31,6 +31,19 @@
     text-align: center;
 }
 
+.input {
+    width: 100%;
+    max-width: 360px;
+    height: 45px;
+    margin: 10px 0;
+    font-size: 18px;
+    border: 2px solid #1B4332;
+    border-radius: 8px;
+    padding: 0 10px;
+    font-family: 'Kalam', serif;
+    outline: none;
+}
+
 .btn {
     width: 100%;
     max-width: 360px;

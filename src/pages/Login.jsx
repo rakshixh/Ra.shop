@@ -5,10 +5,13 @@ import Header from "../components/Header";
 import Profile from "../components/Profile";
 import Footer from "../components/Footer";
 import LoginCSS from "../css/login.module.css";
+import { LoginApi } from "../api/api";
 
 const Login = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [userType, setUserType] = useState("");
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
 
   useEffect(() => {
     const loggedIn = localStorage.getItem("isLoggedIn");
@@ -20,22 +23,28 @@ const Login = () => {
     }
   }, []);
 
-  const handleLogin = (type) => {
-    setUserType(type);
-    setIsLoggedIn(true);
-    localStorage.setItem("isLoggedIn", JSON.stringify(true));
-    localStorage.setItem("userType", JSON.stringify(type));
+  const handleLogin = async (event) => {
+    event.preventDefault();
 
-    if (type === "user") {
-      const address =
-        "Akshya Nagar, 1st Block, 1st Cross, Ramamurthy Nagar, Bangalore-560016";
-      localStorage.setItem("Address", address);
-    }
+    try {
+      const data = await LoginApi({ username, password });
+      setUserType(data.user.role);
+      setIsLoggedIn(true);
+      localStorage.setItem("isLoggedIn", JSON.stringify(true));
+      localStorage.setItem("userType", JSON.stringify(data.user.role));
 
-    if (type === "guest") {
-      toast.success("You logged in as Guest!");
-    } else if (type === "user") {
-      toast.success("You logged in as a User!");
+      if (data.user.role === "user") {
+        const address =
+          "Akshya Nagar, 1st Block, 1st Cross, Ramamurthy Nagar, Bangalore-560016";
+        localStorage.setItem("Address", address);
+        toast.success("You logged in as a User!");
+      }
+
+      if (data.user.role === "guest") {
+        toast.success("You logged in as Guest!");
+      }
+    } catch (error) {
+      toast.error("Login failed. Please try again.");
     }
   };
 
@@ -58,19 +67,30 @@ const Login = () => {
         ) : (
           <div className={LoginCSS.container}>
             <div className={LoginCSS.card}>
-              <h1 className={LoginCSS.loginTitle}>Login</h1>
-              <button
-                className={LoginCSS.btn}
-                onClick={() => handleLogin("guest")}
-              >
-                Login as Guest
-              </button>
-              <button
-                className={LoginCSS.btn}
-                onClick={() => handleLogin("user")}
-              >
-                Login as User
-              </button>
+              <h1 className={LoginCSS.loginTitle} style={{ color: "#1B4332" }}>
+                Login
+              </h1>
+              <form onSubmit={handleLogin}>
+                <input
+                  type="text"
+                  className={LoginCSS.input}
+                  placeholder="Username"
+                  value={username}
+                  onChange={(e) => setUsername(e.target.value)}
+                  required
+                />
+                <input
+                  type="password"
+                  className={LoginCSS.input}
+                  placeholder="Password"
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
+                  required
+                />
+                <button type="submit" className={LoginCSS.btn}>
+                  Login
+                </button>
+              </form>
               <p className={LoginCSS.terms}>
                 You are agreed to our Terms and Conditions!
               </p>
