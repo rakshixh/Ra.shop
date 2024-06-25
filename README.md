@@ -19,3 +19,10 @@
 Access the Artify V1 at [https://ra-shop-v1.vercel.app/](https://ra-shop-v1.vercel.app/)
 
 </details>
+
+<details>
+<summary>Ra Shop - V2 (Login With API)</summary>
+
+Access the Artify V1 at [https://ra-shop-v2.vercel.app/](https://ra-shop-v2.vercel.app/)
+
+</details>
