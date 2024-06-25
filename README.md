@@ -10,3 +10,12 @@
 ### This React Application makes use of Web Browser's localStorage
 
 ### Credit: Product Images <a href="https://www.xenpachi.in/" target="_blank">Xenpachi.in</a>
+
+### Deployed URLs
+
+<details>
+<summary>Ra Shop - V1 (Login With Buttons)</summary>
+
+Access the Artify V1 at [https://ra-shop-v1.vercel.app/](https://ra-shop-v1.vercel.app/)
+
+</details>
