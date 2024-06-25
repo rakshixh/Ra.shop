@@ -7,9 +7,9 @@
 5. Checkout component with address updation functionality
 6. React toastify for toast messages
 
-### This React Application makes use of Web Browser's localStorage
+## This React Application makes use of Web Browser's localStorage
 
-### Credit: Product Images <a href="https://www.xenpachi.in/" target="_blank">Xenpachi.in</a>
+## Credit: Product Images <a href="https://www.xenpachi.in/" target="_blank">Xenpachi.in</a>
 
 ### Deployed URLs
 
