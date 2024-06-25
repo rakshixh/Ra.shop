@@ -30,7 +30,7 @@ const Profile = ({ userType, handleLogout }) => {
         />
         <div className={ProfileCSS.userDataDiv}>
           <h2 className={ProfileCSS.name}>
-            {userType === "user" ? "Alex Cartman" : "Guest User ra3hh62shr3f"}
+            {userType === "user" ? "Luis Rodriguez" : "Guest User ra3hh62shr3f"}
           </h2>
           <p className={ProfileCSS.bio}>
             {userType === "user"

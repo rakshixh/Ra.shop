@@ -34,8 +34,7 @@ const Login = () => {
       localStorage.setItem("userType", JSON.stringify(data.user.role));
 
       if (data.user.role === "user") {
-        const address =
-          "Akshya Nagar, 1st Block, 1st Cross, Ramamurthy Nagar, Bangalore-560016";
+        const address = "321 Oak St, Madrid, Madrid 28001";
         localStorage.setItem("Address", address);
         toast.success("You logged in as a User!");
       }
