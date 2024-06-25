@@ -1,7 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Rokkitt:ital,wght@0,100..900;1,100..900&display=swap');
-
 .logotext {
-    font-family: 'Rokkitt', serif;
     font-size: 3.5rem;
     font-weight: 600;
     color: #edf4f2;
@@ -28,7 +25,7 @@
 
 .ulist {
     list-style: none;
-    margin: 20px 50px 20px 20px;
+    margin: 20px 20px 20px 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
