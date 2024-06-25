@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import HeaderCSS from "../css/header.module.css";
-import { FaUser, FaBars, FaTimes } from "react-icons/fa";
+import { FaUser } from "react-icons/fa";
 import { Stack, Badge } from "@mui/material";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
+import { Turn as Hamburger } from "hamburger-react";
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -25,8 +26,8 @@ function Header() {
             Ra.Shop
           </Link>
         </div>
-        <div className={HeaderCSS.menuIcon} onClick={toggleMenu}>
-          {menuOpen ? <FaTimes /> : <FaBars />}
+        <div className={HeaderCSS.menuIcon}>
+          <Hamburger direction="right" toggled={menuOpen} toggle={toggleMenu} />
         </div>
         <ul
           className={`${HeaderCSS.ulist} ${menuOpen ? HeaderCSS.menuOpen : ""}`}
