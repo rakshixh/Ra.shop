@@ -26,3 +26,35 @@ Access the Artify V1 at [https://ra-shop-v1.vercel.app/](https://ra-shop-v1.verc
 Access the Artify V1 at [https://ra-shop-v2.vercel.app/](https://ra-shop-v2.vercel.app/)
 
 </details>
+
+## Login Credentials
+
+### These credentials are used for V2
+
+<details>
+<summary>Login as GUEST</summary>
+
+**USERNAME: john_doe**
+
+**PASSWORD: John123!**
+
+</details>
+
+<details>
+<summary>Login as USER</summary>
+
+**USERNAME: luis_rodriguez**
+
+**PASSWORD: Luis10!**
+
+</details>
+
+## API used in this Project
+
+**FakeAuthentication-API**
+
+GitHub: [https://github.com/rakshixh/FakeAuthentication-API](https://github.com/rakshixh/FakeAuthentication-API)
+
+Website: [https://fakeauthentication-api.onrender.com/](https://fakeauthentication-api.onrender.com/)
+
+API-Docs: [https://fakeauthentication-api.onrender.com/api/api-docs/](https://fakeauthentication-api.onrender.com/api/api-docs/)
